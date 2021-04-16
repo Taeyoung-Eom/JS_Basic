@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+var pattern = /a/;
+document.write(pattern.exec('abcde')+"<br />");
+var pattern_1 = /a./;    // . 은 하나의 문자라는 의미다. a 를 출력한다.
+document.write(pattern_1.exec('abcde')+"<br />");
+//exec는 괄호안에 변수로정의해둔 것이 있으면 그것들을 배열로 리턴하는 함수이다. ab를 출력한다.
+document.write(pattern_1.test('abcde')+"<br />"); //true 를 출력
+
+document.write(pattern_1.test('bcde')); //false 를 출력
+//test는 괄호안에 변수로정의해둔 것이 있는지 유무를 학인하는것이다.
+    </script>
+</body>
+</html>
